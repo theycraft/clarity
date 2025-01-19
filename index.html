@@ -6,73 +6,80 @@
     <title>Clarity by Jayden</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Georgia', serif;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            line-height: 1.8;
             color: #333;
+            background-color: #fafafa;
         }
         header {
-            background-color: #f4f4f4;
+            background-color: #2c3e50;
+            color: #ecf0f1;
             padding: 20px 0;
             text-align: center;
-            border-bottom: 1px solid #ccc;
         }
         header h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 3em;
+            font-weight: 400;
         }
         header p {
             margin: 5px 0;
-            font-size: 1.2em;
-            color: #555;
+            font-size: 1.3em;
         }
         section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 20px;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
         h2 {
-            color: #444;
+            color: #34495e;
             font-size: 1.8em;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
         p {
-            margin: 10px 0;
+            margin: 15px 0;
         }
-        ul {
-            margin: 10px 0 20px 20px;
-            padding: 0;
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding: 20px 0;
         }
-        ul li {
-            margin-bottom: 5px;
+        .carousel-item {
+            min-width: 300px;
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex-shrink: 0;
         }
         .cta {
             text-align: center;
-            margin: 40px 0;
+            margin: 50px 0;
         }
         .cta a {
             display: inline-block;
-            padding: 10px 20px;
-            background-color: #007BFF;
+            padding: 15px 30px;
+            background-color: #2980b9;
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
-            transition: background-color 0.3s ease;
+            font-size: 1.2em;
+            transition: background-color 0.3s;
         }
         .cta a:hover {
-            background-color: #0056b3;
+            background-color: #1c5980;
         }
         footer {
             text-align: center;
-            padding: 20px 0;
-            background-color: #f4f4f4;
-            border-top: 1px solid #ccc;
-        }
-        footer p {
-            margin: 0;
-            font-size: 0.9em;
-            color: #555;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: #ecf0f1;
         }
     </style>
 </head>
@@ -91,30 +98,20 @@
         <h2>What I Offer</h2>
         <p>Whether you're looking to craft captivating copy, refine your existing content, or streamline your marketing processes, Clarity is here to help.</p>
 
-        <h3>Copywriting that Converts</h3>
-        <p>Words are powerful. I specialise in writing copy that tells your story, resonates with your audience, and drives action. From website copy to product descriptions, blog posts, email campaigns, and more; every word is crafted with your brand's goals in mind.</p>
-        <ul>
-            <li>Website Content</li>
-            <li>Blog Posts & Articles</li>
-            <li>Email Campaigns</li>
-            <li>Sales Pages & Product Descriptions</li>
-        </ul>
-
-        <h3>Copy Editing for Precision</h3>
-        <p>Already have content but need a sharp eye to make it shine? My copy editing services ensure that your message is clear, concise, and error-free. I focus on elevating the tone, structure, and readability of your content while maintaining your unique voice.</p>
-        <ul>
-            <li>Proofreading & Grammar Checks</li>
-            <li>Tone and Voice Refinement</li>
-            <li>Structural Edits for Flow and Impact</li>
-        </ul>
-
-        <h3>Marketing Activation & Consultancy</h3>
-        <p>Beyond the copy, Clarity offers strategic support to streamline your marketing efforts. From backend process automation to marketing strategy consultation, I help businesses implement efficient systems that drive results. Whether it’s developing automated workflows or managing digital marketing campaigns, I ensure that your brand is optimised to perform.</p>
-        <ul>
-            <li>Process Strategy & Automation</li>
-            <li>Marketing Consultancy</li>
-            <li>Campaign Management</li>
-        </ul>
+        <div class="carousel">
+            <div class="carousel-item">
+                <h3>Copywriting that Converts</h3>
+                <p>Words are powerful. I specialise in writing copy that tells your story, resonates with your audience, and drives action. From website copy to product descriptions, blog posts, email campaigns, and more.</p>
+            </div>
+            <div class="carousel-item">
+                <h3>Copy Editing for Precision</h3>
+                <p>Already have content but need a sharp eye to make it shine? My copy editing services ensure your message is clear, concise, and error-free while maintaining your unique voice.</p>
+            </div>
+            <div class="carousel-item">
+                <h3>Marketing Activation & Consultancy</h3>
+                <p>Beyond the copy, I offer strategic support to streamline your marketing efforts, develop automated workflows, and manage digital campaigns.</p>
+            </div>
+        </div>
     </section>
 
     <div class="cta">
